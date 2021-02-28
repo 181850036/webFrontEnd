@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/wallPapers.css">
+    <title>wallPapers</title>
+    <script src="https://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="lol">
+        <a href="https://www.lol.qq.com/main.shtml/">
+            <img class="photos"src="imgs/lol.png" alt="">
+        </a>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li><a href="http://localhost:3001/homePage">首页</a></li>
+            <li><a href="http://localhost:3001/wallPapers">壁纸</a></li>
+            <li><a href="http://localhost:3001/copy">copy</a></li>
+        </ul>
+    </div>
+    <div class="masonry">
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/4.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/21.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/22.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/11.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/16.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/21.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/12.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/13.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/23.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/24.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/25.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/17.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/18.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/19.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/20.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/10.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/1.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/2.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/3.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/14.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/15.JPG" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/30.png" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/31.png" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/32.jpg" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/33.jpg" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/34.jpg" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/35.jpg" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/36.jpg" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/37.jpg" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/38.jpg" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/39.jpg" alt = "">
+        </div>
+        <div class="item">
+            <img class="photos"src="photos/empty.png" data-src="photos/40.jpg" alt = "">
+        </div>
+        
+    </div>
+</body>
+</html>
+<script>
+    window.onload = function() {
+        var photos = document.getElementsByClassName("photos");
+        for (let i = 0; i < photos.length; i++) {
+            photos[i].dataset.isLoaded = "0";
+        }
+        lazyload();
+    }
+    window.onscroll = function() {
+        lazyload();
+    }
+    function lazyload() {
+        var photos = document.getElementsByClassName("photos");
+        var clientHeight = document.documentElement.clientHeight;
+        for (let i = 0; i < photos.length; i++) {
+            if (photos[i].dataset.isLoaded == "0" && photos[i].getClientRects()[0].top <= clientHeight + 40) {
+                photos[i].dataset.isLoaded = "1";
+                let src = photos[i].src;
+                let data_src = photos[i].dataset.src;
+                photos[i].src = data_src;
+                console.log(src);
+            }
+        }
+    }
+</script>
+
+

@@ -1,0 +1,35 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'D:\\NodeJs\\node.exe',
+1 verbose cli   'D:\\NodeJs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'capchapng'
+1 verbose cli ]
+2 info using npm@6.14.9
+3 info using node@v14.15.3
+4 verbose npm-session bd114a86154c1524
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 404 https://registry.npmjs.org/capchapng 3665ms
+8 http fetch GET 404 https://registry.npmjs.org/capchapng 337ms
+9 silly fetchPackageMetaData error for capchapng@latest 404 Not Found - GET https://registry.npmjs.org/capchapng - Not found
+10 timing stage:rollbackFailedOptional Completed in 2ms
+11 timing stage:runTopLevelLifecycles Completed in 4918ms
+12 verbose stack Error: 404 Not Found - GET https://registry.npmjs.org/capchapng - Not found
+12 verbose stack     at D:\NodeJs\node_modules\npm\node_modules\npm-registry-fetch\check-response.js:117:15
+12 verbose stack     at processTicksAndRejections (internal/process/task_queues.js:93:5)
+13 verbose statusCode 404
+14 verbose pkgid capchapng@latest
+15 verbose cwd D:\桌面\web前端\hw1
+16 verbose Windows_NT 10.0.18363
+17 verbose argv "D:\\NodeJs\\node.exe" "D:\\NodeJs\\node_modules\\npm\\bin\\npm-cli.js" "install" "capchapng"
+18 verbose node v14.15.3
+19 verbose npm  v6.14.9
+20 error code E404
+21 error 404 Not Found - GET https://registry.npmjs.org/capchapng - Not found
+22 error 404
+23 error 404 'capchapng@latest' is not in the npm registry.
+24 error 404 You should bug the author to publish it (or use the name yourself!)
+25 error 404 Note that you can also install from a
+26 error 404 tarball, folder, http url, or git url.
+27 verbose exit [ 1, true ]

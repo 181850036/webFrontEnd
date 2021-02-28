@@ -1,0 +1,83 @@
+/* body {
+    background: url("p3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+body{
+    margin:4px;
+    font-family: Helvetica;
+    background-color: black;
+
+}
+.masonry{
+    margin: 30px 40px;
+    column-count: 3;
+    column-gap: 0;
+}
+.item{
+    padding: 15px;
+}
+.item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transition: all 0.9s;
+    -webkit-transition:all 0.9s;
+}
+.item img:hover{
+    transform:translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -webkit-box-shadow: rgb(224, 216, 216) 3px 3px 6px;
+    -moz-box-shadow: rgb(224, 216, 216) 3px 3px 6px;
+    box-shadow: rgb(224, 216, 216) 3px 3px 6px;
+}
+
+.lol{
+    top: 1%;
+    position: absolute;
+    left: 15%;
+}
+
+
+.nav ul li a:hover {
+    cursor: pointer;
+    color: #1fa9bb;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+.nav {
+    position: absolute;
+    left: 25%;
+    top:0.5%;
+    border: none;
+    z-index: 100;
+
+}
+.nav ul li {
+
+    float: left;
+}
+.nav ul li a {
+    display: block;
+    width: 200px;
+    top:0;
+    line-height: 60px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.lucian {
+    width: 100%;
+    height: 78px;
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

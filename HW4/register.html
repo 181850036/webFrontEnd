@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html lang="en">  
+<head>  
+ <meta charset="">  
+ <title>Sign Up</title>  
+ <link rel="stylesheet" type="text/css" href="./public/register.css"/>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <script src="./public/sha256.js"></script>
+    <script src ="./public/register.js"></script>
+
+</head>  
+<body>
+        <div id="login-box">
+            <h1>Sign Up</h1>
+            <div class="form">
+                <div class="item">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" placeholder="username" name="username" id = 'input_username'>
+                </div>
+
+                <div class="item">
+                    <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                    <input type="password" placeholder="password" name="password" id = 'input_password'>
+                </div>
+                <div class="item">
+                    <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                    <input type="password" placeholder="confirm password" name="password" id = confirm_password>
+                </div>
+                <div class="item">
+                    <i class="fa fa-codepen" aria-hidden="true"></i>
+                    <input type="captcha" placeholder="verification code" name="captcha" id = "input_captcha">
+                </div>
+            </div>
+            <div id="captcha" onclick="getCaptcha();"></div>
+            <button onclick="register();">Sign Up!</button>
+
+        </div>
+    </body>
+    <script>
+    </script>
+</html>

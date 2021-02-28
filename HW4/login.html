@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html lang="en">  
+<head>  
+ <meta charset="">  
+ <title>Login</title>  
+ <link rel="stylesheet" type="text/css" href="./public/login.css"/>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <!-- <script src="server.js"></script> -->
+    <!-- <script src="models.js"></script> -->
+    <script src="./public/sha256.js"></script>
+    <script src = "./public/login.js"></script>
+
+</head>  
+<body>
+        <div id="login-box">
+            <h1>Hi Summoner</h1>
+            <div class="form">
+                <div class="item">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" placeholder="username" name="username" id="input_username">
+                </div>
+
+                <div class="item">
+                    <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                    <input type="password" placeholder="password" name="password" id = "input_password">
+                </div>
+                <div class="item">
+                    <i class="fa fa-codepen" aria-hidden="true"></i>
+                    <input type="captcha" placeholder="verification code" name="captcha" id = "input_captcha">
+                </div>
+                <div id="captcha" onclick="getCaptcha();"></div>
+                
+            </div>
+            <button onclick="login();">Sign In</button>
+            
+            <a href="http://localhost:3001/register">
+            <button >Sign Up</button>
+            </a>
+
+        </div>
+    <div class="full-screen">
+        <video src="./public/s.mp4" autoplay muted loop></video>
+    </div>
+    </body>
+    <script>
+    </script>
+</html>

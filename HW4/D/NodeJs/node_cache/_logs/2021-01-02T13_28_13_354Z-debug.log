@@ -1,0 +1,45 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'D:\\NodeJs\\node.exe',
+1 verbose cli   'D:\\NodeJs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i',
+1 verbose cli   'crypto-js/sha256'
+1 verbose cli ]
+2 info using npm@6.14.9
+3 info using node@v14.15.3
+4 verbose npm-session f0221c63ce9b2a70
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData error for github:crypto-js/sha256 Error while executing:
+7 silly fetchPackageMetaData D:\Git\cmd\git.EXE ls-remote -h -t ssh://git@github.com/crypto-js/sha256.git
+7 silly fetchPackageMetaData
+7 silly fetchPackageMetaData Host key verification failed.
+7 silly fetchPackageMetaData fatal: Could not read from remote repository.
+7 silly fetchPackageMetaData
+7 silly fetchPackageMetaData Please make sure you have the correct access rights
+7 silly fetchPackageMetaData and the repository exists.
+7 silly fetchPackageMetaData
+7 silly fetchPackageMetaData exited with error code: 128
+8 timing stage:rollbackFailedOptional Completed in 0ms
+9 timing stage:runTopLevelLifecycles Completed in 6376ms
+10 verbose stack Error: exited with error code: 128
+10 verbose stack     at ChildProcess.<anonymous> (D:\NodeJs\node_modules\npm\node_modules\pacote\lib\util\finished.js:12:19)
+10 verbose stack     at ChildProcess.emit (events.js:315:20)
+10 verbose stack     at maybeClose (internal/child_process.js:1048:16)
+10 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)
+11 verbose cwd D:\桌面\web前端\hw1
+12 verbose Windows_NT 10.0.18363
+13 verbose argv "D:\\NodeJs\\node.exe" "D:\\NodeJs\\node_modules\\npm\\bin\\npm-cli.js" "i" "crypto-js/sha256"
+14 verbose node v14.15.3
+15 verbose npm  v6.14.9
+16 error Error while executing:
+16 error D:\Git\cmd\git.EXE ls-remote -h -t ssh://git@github.com/crypto-js/sha256.git
+16 error
+16 error Host key verification failed.
+16 error fatal: Could not read from remote repository.
+16 error
+16 error Please make sure you have the correct access rights
+16 error and the repository exists.
+16 error
+16 error exited with error code: 128
+17 verbose exit [ 1, true ]

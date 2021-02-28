@@ -1,0 +1,29 @@
+[
+  {
+    "_id": {
+      "$oid": "5ff076d1b4cd4a4700b9bca3"
+    },
+    "username": "zzz",
+    "password": "56a5e668f47c3ab320484daf3f918bb6ee2076c0ab194379633103810bfeadbf",
+    "salt": "78220fc239",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ff0891af6f9bf39b80a82bd"
+    },
+    "username": "18382412976",
+    "password": "c482cd9215074ff8ab67f605976ffe2a48043df51ed8bfa15772dbbeecc7ae5c",
+    "salt": "b11babe290",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ff09103667db115ec5e7256"
+    },
+    "username": "123",
+    "password": "22e7fdccc4ba1a80003391cae6e969139a8cc8e0c199366eb55d4c998f6d955b",
+    "salt": "64d922630c",
+    "__v": 0
+  }
+]
